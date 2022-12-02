@@ -87,6 +87,9 @@ class EventDetail : Fragment(), OnMapReadyCallback {
 
         comments.observe(viewLifecycleOwner){
                 eachComment -> commentAdapter.setComments(eachComment)
+                if(comments.value?.isEmpty() == true){
+                    binding.noCommentsLabel.visibility = View.VISIBLE
+                }
         }
 
         binding.commentEventButton.setOnClickListener {

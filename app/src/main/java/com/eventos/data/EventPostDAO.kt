@@ -72,7 +72,6 @@ class EventPostDAO {
         firestore.collection(eventsCollection).document(event.id).collection(commentsCollection).addSnapshotListener{
                 snapshot, error ->
             if(error != null){
-                print("########### HOLLLAAAAAA ############")
                 return@addSnapshotListener
             }
             if(snapshot != null){

@@ -35,11 +35,15 @@
     <string name="eventNameLabel">Nombre del evento</string>
     <string name="eventDescriptionLabel">Descripción del evento</string>
     <string name="eventPhoneLabel">Número telefónico del evento</string>
-    <string name="eventDateLabel">Fecha del evento</string>
+    <string name="eventDateLabel">Fecha del evento </string>
     <string name="eventActivitiesLabel">Actividades del evento</string>
-    <string name="eventLocationLabel">Ubicación del evento</string>
+    <string name="eventLocationLabel">Ubicación del evento </string>
     <string name="eventCommentsLabel">Comentarios</string>
     <string name="newCommentLabel">Comentario</string>
+    <string name="noCommentsLabel">Este evento no tiene comentarios</string>
+    <string name="commentsLocationLabel">Ubicación: </string>
+    <string name="commentsDatetimeLabel">Fecha: </string>
+
 
     <string name="eventAddedAlert">Evento agregado con éxito.</string>
     <string name="addEventErrorAlert">Error al agregar evento. Por favor llene todos los campos.</string>

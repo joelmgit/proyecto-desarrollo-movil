@@ -35,7 +35,8 @@ class DeleteComment : Fragment() {
         _binding = FragmentDeleteCommentBinding.inflate(inflater, container, false)
 
         binding.cancelButton.setOnClickListener {
-            findNavController().navigate(R.id.action_deleteComment_to_eventDetail)
+            val nav = DeleteCommentDirections.actionDeleteCommentToEventDetail(args.event)
+            findNavController().navigate(nav)
         }
 
         binding.deleteCommentButton.setOnClickListener { deleteCommment() }

@@ -29,7 +29,7 @@ class CommentAdapter constructor(context:Context, eventPost: EventPost) : Recycl
             itemBinding.eventCommentAuthor.text = comment.authorName
             itemBinding.eventCommentBody.text = comment.body
             itemBinding.eventCommentDateTime.text = comment.commentDateTime
-            itemBinding.eventCommentLocation.text = comment.latitude.toString() + ", " + comment.longitude.toString()
+            itemBinding.eventCommentLocation.text = comment.latitude.toString().take(8) + ", " + comment.longitude.toString().take(8)
             if(authInstance.currentUser!!.uid == comment.authorId){
                 itemBinding.deleteEventCommentButton.visibility = View.VISIBLE
                 itemBinding.deleteEventCommentButton.setOnClickListener {

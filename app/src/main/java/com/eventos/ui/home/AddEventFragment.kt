@@ -56,24 +56,29 @@ class AddEvent : Fragment() {
     }
 
     private fun activateGPS() {
-        if (
+        if(
             requireActivity().checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
-            && requireActivity().checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED
-        ) {
+            && requireActivity().checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED){
             requireActivity().requestPermissions(
                 arrayOf(
                     Manifest.permission.ACCESS_COARSE_LOCATION,
-                    Manifest.permission.ACCESS_COARSE_LOCATION
-                ),
-                105
-            )
+                    Manifest.permission.ACCESS_COARSE_LOCATION),
+                105)
+        }else{
+            val fusedLocationClient : FusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireContext())
+            fusedLocationClient.lastLocation.addOnSuccessListener {
+                    location : Location ->
+                eventLatitude = location.latitude
+                eventLongitude = location.longitude
+                eventAltitude = location.altitude
+            }
         }
     }
 
     private fun requestLocation() {
         val fusedLocationClient : FusedLocationProviderClient = LocationServices.getFusedLocationProviderClient(requireContext())
-        if (requireActivity().checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) != PackageManager.PERMISSION_GRANTED
-            && requireActivity().checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) != PackageManager.PERMISSION_GRANTED) {
+        if (requireActivity().checkSelfPermission(Manifest.permission.ACCESS_COARSE_LOCATION) == PackageManager.PERMISSION_GRANTED
+            && requireActivity().checkSelfPermission(Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED) {
             fusedLocationClient.lastLocation.addOnSuccessListener {
                     location : Location ->
                 eventLatitude = location.latitude

@@ -150,11 +150,19 @@
 
             </androidx.recyclerview.widget.RecyclerView>
 
+            <TextView
+                android:id="@+id/noCommentsLabel"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="50dp"
+                android:text="@string/noCommentsLabel"
+                android:visibility="gone" />
+
             <Button
                 android:id="@+id/commentEventButton"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_weight="1"
                 android:text="@string/commentEventButton" />
+
         </LinearLayout>
 </ScrollView>
