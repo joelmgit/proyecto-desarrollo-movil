@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:orientation="vertical"
+    tools:context=".AddEvent" >
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/addEventTitle"
+        android:textColor="@android:color/background_dark"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView7"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/addEventSubTitle" />
+
+    <EditText
+        android:id="@+id/eventNameTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventNameLabel"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eventPhoneTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventPhoneLabel"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/eventDescriptionTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventDescriptionLabel"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/eventDateTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventDateLabel"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/eventActivitiesTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventActivitiesLabel"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/addEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/addEventTitle" />
+</LinearLayout>

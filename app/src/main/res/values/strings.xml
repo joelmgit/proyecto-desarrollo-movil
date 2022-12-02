@@ -1,0 +1,75 @@
+<resources>
+    <string name="app_name">Eventos</string>
+
+    <string name="signInTitle">Iniciar sesión</string>
+    <string name="signInSubTitle">Inicia sesión en la app de eventos</string>
+    <string name="signUpSubTitle">Registrate en la app de eventos</string>
+    <string name="updateProfileTitle">Actualiza tu perfil</string>
+    <string name="signUpTitle">Registrarse</string>
+    <string name="homeTitle">Eventos publicados</string>
+    <string name="updateEventTitle">Actualizar evento</string>
+    <string name="addEventTitle">Agregar evento</string>
+    <string name="eventDetailTitle">Detalles de evento</string>
+    <string name="addEventSubTitle">La ubicación del evento se registra con la actual del dispositivo</string>
+    <string name="updateEventSubTitle">La ubicación del evento se actualizará con la actual del dispositivo</string>
+    <string name="deleteCommentTitle">Eliminar comentario</string>
+    <string name="deleteCommentSubTitle">Seguro que desea eliminar el comentario</string>
+    <string name="addCommentTitle">Agregar comentario</string>
+
+
+    <string name="signUpDescription">¡Llena el formulario y accede a información de eventos cerca tuyo!</string>
+
+    <string name="updateProfileButton">Actualizar perfil</string>
+    <string name="deleteEventButton">Eliminar evento</string>
+    <string name="commentEventButton">Comentar evento</string>
+
+    <string name="yesConfirmation">Sí</string>
+    <string name="noConfirmation">No</string>
+    <string name="cancelConfirmation">Cancelar</string>
+    <string name="confirmDelete">¿Seguro que desea eliminar este evento?</string>
+
+    <string name="emailLabel">Correo electrónico</string>
+    <string name="passwordLabel">Contraseña</string>
+    <string name="currentPasswordLabel">Contraseña actual</string>
+    <string name="fullNameLabel">Nombre completo</string>
+    <string name="eventNameLabel">Nombre del evento</string>
+    <string name="eventDescriptionLabel">Descripción del evento</string>
+    <string name="eventPhoneLabel">Número telefónico del evento</string>
+    <string name="eventDateLabel">Fecha del evento</string>
+    <string name="eventActivitiesLabel">Actividades del evento</string>
+    <string name="eventLocationLabel">Ubicación del evento</string>
+    <string name="eventCommentsLabel">Comentarios</string>
+    <string name="newCommentLabel">Comentario</string>
+
+    <string name="eventAddedAlert">Evento agregado con éxito.</string>
+    <string name="addEventErrorAlert">Error al agregar evento. Por favor llene todos los campos.</string>
+    <string name="deleteEventAlert">Evento eliminado con éxito.</string>
+    <string name="updateEventAlert">Evento actualizado con éxito.</string>
+    <string name="updateEventErrorAlert">Error al actualizar evento. Por favor llene todos los campos.</string>
+    <string name="commentAddedAlert">Comentario agregado con éxito.</string>
+    <string name="commentDeletedAlert">Comentario aliminado con éxito.</string>
+    <string name="addCommentErrorAlert">Error al agregar comentario. Por favor ingrese un comentario.</string>
+
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="sign_in_fragment_label">Iniciar sesión</string>
+    <string name="sign_up_fragment_label">Registrarse</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="title_activity_inner_platform">InnerPlatformActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="nav_app_name">App Eventos</string>
+
+    <string name="menu_home">Eventos</string>
+    <string name="menu_profile">Perfil</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <string name="google_map_key" translatable="false">AIzaSyACRWc430Msotw3uMLA90ZxMKxwJIApmFs</string>
+
+</resources>

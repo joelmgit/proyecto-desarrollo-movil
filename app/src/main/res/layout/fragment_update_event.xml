@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="25dp"
+    android:orientation="vertical"
+    tools:context=".UpdateEvent">
+
+    <TextView
+        android:id="@+id/textView8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/updateEventTitle"
+        android:textColor="@android:color/background_dark"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginBottom="25dp"
+        android:text="@string/updateEventSubTitle" />
+
+    <EditText
+        android:id="@+id/updateEventNameTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventNameLabel"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateEventPhoneTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventPhoneLabel"
+        android:inputType="phone" />
+
+    <EditText
+        android:id="@+id/updateEventDescriptionTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventDescriptionLabel"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/updateEventDateTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventDateLabel"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/updateEventActivitiesTextField"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/eventActivitiesLabel"
+        android:inputType="textPersonName" />
+
+    <Button
+        android:id="@+id/updateEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="@string/updateEventTitle" />
+
+    <Button
+        android:id="@+id/deleteEventButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:backgroundTint="@android:color/holo_red_dark"
+        android:text="@string/deleteEventButton"
+        android:theme="@style/Button.Red" />
+</LinearLayout>

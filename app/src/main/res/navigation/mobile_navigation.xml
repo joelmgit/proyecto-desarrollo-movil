@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.eventos.ui.home.EventsFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_events" >
+        <action
+            android:id="@+id/action_nav_home_to_eventDetail"
+            app:destination="@id/eventDetail" />
+        <action
+            android:id="@+id/action_nav_home_to_updateEvent"
+            app:destination="@id/updateEvent" />
+        <action
+            android:id="@+id/action_nav_events_to_addEvent"
+            app:destination="@id/addEvent" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.eventos.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/eventDetail"
+        android:name="com.eventos.ui.home.EventDetail"
+        android:label="@string/eventDetailTitle" >
+        <argument
+            android:name="event"
+            app:argType="com.eventos.model.EventPost" />
+        <action
+            android:id="@+id/action_eventDetail_to_addComment"
+            app:destination="@id/addComment" />
+        <action
+            android:id="@+id/action_eventDetail_to_deleteComment"
+            app:destination="@id/deleteComment" />
+    </fragment>
+    <fragment
+        android:id="@+id/updateEvent"
+        android:name="com.eventos.ui.home.UpdateEvent"
+        android:label="@string/updateEventTitle"
+        tools:layout="@layout/fragment_update_event" >
+        <argument
+            android:name="event"
+            app:argType="com.eventos.model.EventPost" />
+        <action
+            android:id="@+id/action_updateEvent_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/addEvent"
+        android:name="com.eventos.ui.home.AddEvent"
+        android:label="@string/addEventTitle" >
+        <action
+            android:id="@+id/action_addEvent_to_nav_home"
+            app:destination="@id/nav_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/addComment"
+        android:name="com.eventos.ui.home.AddComment"
+        android:label="@string/addCommentTitle"
+        tools:layout="@layout/fragment_add_comment" >
+        <argument
+            android:name="event"
+            app:argType="com.eventos.model.EventPost" />
+        <action
+            android:id="@+id/action_addComment_to_eventDetail"
+            app:destination="@id/eventDetail" />
+    </fragment>
+    <fragment
+        android:id="@+id/deleteComment"
+        android:name="com.eventos.ui.home.DeleteComment"
+        android:label="@string/deleteCommentTitle"
+        tools:layout="@layout/fragment_delete_comment" >
+        <argument
+            android:name="comment"
+            app:argType="com.eventos.model.EventComment" />
+        <action
+            android:id="@+id/action_deleteComment_to_eventDetail"
+            app:destination="@id/eventDetail" />
+        <argument
+            android:name="event"
+            app:argType="com.eventos.model.EventPost" />
+    </fragment>
+</navigation>
