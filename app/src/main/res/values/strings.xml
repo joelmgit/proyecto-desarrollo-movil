@@ -22,6 +22,7 @@
     <string name="updateProfileButton">Actualizar perfil</string>
     <string name="deleteEventButton">Eliminar evento</string>
     <string name="commentEventButton">Comentar evento</string>
+    <string name="FilterEventsButton">Filtrar eventos</string>
 
     <string name="yesConfirmation">Sí</string>
     <string name="noConfirmation">No</string>
@@ -53,6 +54,7 @@
     <string name="commentAddedAlert">Comentario agregado con éxito.</string>
     <string name="commentDeletedAlert">Comentario aliminado con éxito.</string>
     <string name="addCommentErrorAlert">Error al agregar comentario. Por favor ingrese un comentario.</string>
+    <string name="filterErrorAlert">Por favor ingrese un nombre para filtrar.</string>
 
     <string name="action_settings">Settings</string>
     <!-- Strings used for fragments for navigation -->

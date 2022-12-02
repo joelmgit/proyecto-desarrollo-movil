@@ -58,4 +58,9 @@ class EventPostAdapter : RecyclerView.Adapter<EventPostAdapter.EventPostViewHold
         notifyDataSetChanged()  //Se notifica que el conjunto de datos cambio y se redibuja toda la lista
     }
 
+    fun filterEvents(events : List<EventPost>, filterParameter:String) {
+        eventsList = events.filter { it.name == filterParameter}
+        notifyDataSetChanged()  //Se notifica que el conjunto de datos cambio y se redibuja toda la lista
+    }
+
 }

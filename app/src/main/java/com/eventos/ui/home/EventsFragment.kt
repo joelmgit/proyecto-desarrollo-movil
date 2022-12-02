@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -43,6 +44,14 @@ class EventsFragment : Fragment() {
 
         binding.addEventNavigationButton.setOnClickListener{
             findNavController().navigate(R.id.action_nav_events_to_addEvent)
+        }
+
+        binding.filterEventsButton.setOnClickListener {
+            if(binding.filterEventsTextField.text.isNotEmpty()){
+                eventPostAdapter.filterEvents(homeViewModel.getEvents.value!!, binding.filterEventsTextField.text.toString())
+            }else{
+                Toast.makeText(requireContext(),getString(R.string.filterErrorAlert), Toast.LENGTH_SHORT).show()
+            }
         }
 
         return binding.root
